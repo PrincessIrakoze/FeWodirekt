@@ -1,0 +1,400 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005BAC;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header nav button {
+    background: none;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    color: white;
+    text-align: center;
+    padding: 80px 50px;
+  }
+  
+  .search-bar {
+    margin-top: 200px;
+  }
+  
+  .search-bar input, .search-bar button {
+    padding: 10px;
+    margin: 5px;
+  }
+   
+  .destinations {
+    padding: 50px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .card {
+    background-color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    flex: 1;
+  }
+
+  .accomodationList{
+    display: flex;
+      gap: 16px; /* Spacing between cards */
+      overflow-x: auto; /* Allows horizontal scrolling if cards overflow */
+      padding: 16px;
+      box-sizing: border-box;
+      max-width: 100%; /* Adjusts for screen size */
+}
+.accomodationCard{
+    position: relative;
+    width: 225px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 292px;
+    display: flex;
+}
+.accomodationCard img {
+    width: 225pxs;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.accomodationCard .accomodationHover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+}    
+.accomodationList::-webkit-scrollbar {
+    display: none;
+}
+.accomodationList {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;    /* Firefox */
+}
+.tipsList{
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .tipCard {
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .tipCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .tipCard .tipCardContent {
+    padding: 16px;
+  }
+
+  .tipRating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .tipRating .tipScore {
+    background-color: #2a9d8f;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .tipRating span {
+    color: #555;
+    font-size: 14px;
+  }
+
+  .tipCard h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 8px 0;
+  }
+
+  .tipCard .location {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 12px;
+  }
+
+  .tipCard .price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .tipCard .details {
+    font-size: 14px;
+    color: #777;
+  }
+  .tipsList::-webkit-scrollbar {
+    display: none;
+  }
+  .tipsList {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+  }
+  .container {
+    display: flex;
+    gap: 5px;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 600px;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 12px;
+    height: auto;
+    display: block;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .card-description {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+   
+  .holidayHomes h1 {
+    font-size: 28px;
+  }
+  
+  .holidayHomes p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .holidayHomes .offer-period {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .holidayHomesList {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .holidayHomesCard {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  .holidayHomesCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .holidayHomesCard .holidayHomesRating {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .holidayHomesCard .holidayHomesRating .holidayHomesScore {
+    background-color: #118849;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .holidayHomesLabel {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .holidayHomesReviews{
+    color: #666;
+  }
+  
+  .holidayHomesCard h4 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .holidayHomesCard p {
+    padding: 0 10px;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .holidayHomesPrice {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e3358;
+    padding: 10px;
+  }
+  
+  .holidayHomesPriceDetails {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    color: #666;
+  }
+.FindPrivent {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.findHeader h1 {
+    font-size: 2rem;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.findHeader p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.FindCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+.FindCard{
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(25% - 10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.FindCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.FindCards span {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #212121;
+}
+.features {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    padding: 40px;
+    gap: 20px; 
+  }
+  
+  
+  .feature {
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  
+  .feature img {
+    width: 50px; 
+    height: auto; 
+    margin-bottom: 15px;
+  }
+  
+  
+  .feature h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #1a1a1a; 
+  }
+  
+  
+  .feature p {
+    font-size: 14px;
+    color: #4a4a4a; 
+    line-height: 1.6; 
+  }
+  
+
+
+  
