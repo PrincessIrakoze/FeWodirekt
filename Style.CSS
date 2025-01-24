@@ -29,6 +29,7 @@ body {
   }
   
   .hero {
+    background: Background.jpeg;
     color: white;
     text-align: center;
     padding: 80px 50px;
